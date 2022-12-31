@@ -10,7 +10,8 @@ class Main extends hxd.App {
 	}
 
 	override function update(dt:Float) {
-		parallax.update(dt);
+		var speed:Int = -3; // Movement form gameBase
+		parallax.update(dt, speed);
 	}
 
 	function createParallax() {
